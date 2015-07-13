@@ -33,7 +33,7 @@
                     <field name="debit"/>
                 </field>
                 <!-- Display Data -->
-                <xpath expr="//div[@class='oe_kanban_partner_links']" position="inside">
+                <xpath expr="//div[@class='oe_kanban_partner_categories']" position="after">
                     <span t-if="record.credit.value>0" class="oe_tag maisondub_partner_credit">
                         Credit:<t t-esc="record.credit.value"/> €
                     </span>
