@@ -33,6 +33,8 @@
         'web_tree_image',
         'hr_expense',
         'base_vat',
+        'document',
+        'knowledge',
     ],
     'data': [
         'security/ir_model_access.yml',

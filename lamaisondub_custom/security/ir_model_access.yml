@@ -51,3 +51,20 @@
     perm_write: true
     perm_unlink: true
 
+- !record {model: ir.model.access, id: base.access_ir_attachment_group_user}:
+    perm_unlink: false
+
+- !record {model: ir.model.access, id: document.access_ir_attachment_group_user}:
+    perm_unlink: false
+
+- !record {model: ir.model.access, id: knowledge.access_ir_attachment_sale_manager}:
+    perm_unlink: false
+
+- !record {model: ir.model.access, id: knowledge.access_ir_attachment_partner_manager}:
+    perm_unlink: false
+
+- !record {model: ir.model.access, id: document.access_ir_attachment_group_system}:
+    perm_read: true
+    perm_create: true
+    perm_write: true
+    perm_unlink: true
