@@ -20,5 +20,14 @@
 #
 ##############################################################################
 
-from . import account_invoice_line
-from . import hr_expense_expense
+from openerp import fields
+from openerp.models import Model
+
+
+class HrExpenseExpense(Model):
+    _inherit = 'hr.expense.expense'
+
+    # Column Section
+    image = fields.Binary(
+        string="Image", related='employee_id.address_home_id.image',
+        store=True)
