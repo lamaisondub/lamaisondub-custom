@@ -66,18 +66,18 @@
             <field name="inherit_id" ref="account.invoice_form"/>
             <field name="arch" type="xml">
                 <!-- hide fields -->
-                <field name="account_id" position="attributes">
-                  <attribute name="groups">account.group_account_user</attribute>
-                </field>
                 <field name="fiscal_position" position="attributes">
                   <attribute name="groups">account.group_account_user</attribute>
                 </field>
                 <field name="payment_term" position="attributes">
                   <attribute name="groups">account.group_account_user</attribute>
                 </field>
-                <field name="comment" position="attributes">
+                <xpath expr="//label[@for='amount_tax']" position="attributes">
                   <attribute name="groups">account.group_account_user</attribute>
-                </field>
+                </xpath>
+                <xpath expr="//button[@name='button_reset_taxes']" position="attributes">
+                  <attribute name="groups">account.group_account_user</attribute>
+                </xpath>
                 <!-- hide extra-page -->
                 <xpath expr="//page[@string='Other Info']" position="attributes">
                   <attribute name="groups">account.group_account_user</attribute>
@@ -85,6 +85,62 @@
                 <xpath expr="//page[@string='Payments']" position="attributes">
                   <attribute name="groups">account.group_account_user</attribute>
                 </xpath>
+                <!-- Add photo-->
+                <xpath expr="//field[@name='invoice_line']/tree/field[@name='price_subtotal']" position="after">
+                    <field name="image" widget="image" height="32"/>
+                 </xpath>
+                <!-- hide taxes in lines -->
+                <xpath expr="//field[@name='invoice_line']/tree/field[@name='invoice_line_tax_id']" position="attributes">
+                    <attribute name="groups">account.group_account_user</attribute>
+                 </xpath>
+                 <!-- create reference for CSS -->
+                <xpath expr="//field[@name='invoice_line']/tree" position="attributes">
+                    <attribute name="class">lamaisondub_custom__view_account_invoice_form</attribute>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="view_account_invoice_form_supplier" model="ir.ui.view">
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+                <!-- hide fields -->
+                <field name="date_due" position="attributes">
+                  <attribute name="groups">account.group_account_user</attribute>
+                </field>
+                <field name="fiscal_position" position="attributes">
+                  <attribute name="groups">account.group_account_user</attribute>
+                </field>
+                <field name="origin" position="attributes">
+                  <attribute name="groups">account.group_account_user</attribute>
+                </field>
+                <field name="reference_type" position="attributes">
+                  <attribute name="groups">account.group_account_user</attribute>
+                </field>
+
+                <field name="tax_line" position="attributes">
+                  <attribute name="groups">account.group_account_user</attribute>
+                </field>
+                <field name="amount_tax" position="attributes">
+                  <attribute name="groups">account.group_account_user</attribute>
+                </field>
+
+                <xpath expr="//label[@for='amount_tax']" position="attributes">
+                  <attribute name="groups">account.group_account_user</attribute>
+                </xpath>
+                <xpath expr="//button[@name='button_reset_taxes']" position="attributes">
+                  <attribute name="groups">account.group_account_user</attribute>
+                </xpath>
+
+                <!-- hide extra-page -->
+                <xpath expr="//page[@string='Other Info']" position="attributes">
+                  <attribute name="groups">account.group_account_user</attribute>
+                </xpath>
+                <xpath expr="//page[@string='Payments']" position="attributes">
+                  <attribute name="groups">account.group_account_user</attribute>
+                </xpath>
+
                 <!-- Add photo-->
                 <xpath expr="//field[@name='invoice_line']/tree/field[@name='price_subtotal']" position="after">
                     <field name="image" widget="image" height="32"/>
