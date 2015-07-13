@@ -2,7 +2,8 @@ La Maison Dub - Custom Module
 =============================
 
 This module:
-* display credit and debit field on res.partner kanban view; OK
+* display credit and debit field on res.partner kanban view;
+* give the possibility to all people to see Journal Items Button in res.partner form view;
 
 Credits
 =======
