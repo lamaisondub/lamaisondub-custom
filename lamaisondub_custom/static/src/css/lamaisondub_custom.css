@@ -24,3 +24,13 @@
 .openerp .maisondub_partner_debit{
     background-color:#AFA;
 }
+
+/* lamaisondub_custom - view_account_invoice_form                            */
+
+.lamaisondub_custom__view_account_invoice_form [data-id="sequence"]         {width: 3%;}
+.lamaisondub_custom__view_account_invoice_form [data-id="image"]            {width: 7%;}
+.lamaisondub_custom__view_account_invoice_form [data-id="product_id"]       {width: 28%;}
+.lamaisondub_custom__view_account_invoice_form [data-id="name"]             {width: 38%;}
+.lamaisondub_custom__view_account_invoice_form [data-id="quantity"]         {width: 8%;}
+.lamaisondub_custom__view_account_invoice_form [data-id="price_unit"]       {width: 8%;}
+.lamaisondub_custom__view_account_invoice_form [data-id="price_subtotal"]   {width: 8%;}

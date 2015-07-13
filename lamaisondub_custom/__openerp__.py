@@ -30,6 +30,7 @@
     'depends': [
         'base',
         'account',
+        'web_tree_image',
     ],
     'data': [
         'security/ir_model_access.yml',

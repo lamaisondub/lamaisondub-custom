@@ -20,4 +20,13 @@
 #
 ##############################################################################
 
-from . import models
+from openerp import fields
+from openerp.models import Model
+
+
+class AccountInvoiceLine(Model):
+    _inherit = 'account.invoice.line'
+
+    # Column Section
+    image = fields.Binary(
+        string="Image", related='product_id.image_small', store=True)
