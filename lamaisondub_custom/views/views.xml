@@ -37,7 +37,7 @@
                     <span t-if="record.credit.value>0" class="oe_tag maisondub_partner_credit">
                         Credit:<t t-esc="record.credit.value"/> €
                     </span>
-                    <span t-if="record.debit.value>0" class="oe_tag maisondub_partner_credit">
+                    <span t-if="record.debit.value>0" class="oe_tag maisondub_partner_debit">
                         Debit:<t t-esc="record.debit.value"/> €
                     </span>
                 </xpath>
