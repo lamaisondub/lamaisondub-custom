@@ -34,3 +34,13 @@
 .lamaisondub_custom__view_account_invoice_form [data-id="quantity"]         {width: 8%;}
 .lamaisondub_custom__view_account_invoice_form [data-id="price_unit"]       {width: 8%;}
 .lamaisondub_custom__view_account_invoice_form [data-id="price_subtotal"]   {width: 8%;}
+
+/* lamaisondub_custom - view_hr_expense_expense_form                            */
+
+.lamaisondub_custom__view_hr_expense_expense_form [data-id="date"]         {width: 16%;}
+.lamaisondub_custom__view_hr_expense_expense_form [data-id="product_id"]       {width: 22%;}
+.lamaisondub_custom__view_hr_expense_expense_form [data-id="name"]             {width: 27%;}
+.lamaisondub_custom__view_hr_expense_expense_form [data-id="ref"]         {width: 15%;}
+.lamaisondub_custom__view_hr_expense_expense_form [data-id="unit_amount"]       {width: 7%;}
+.lamaisondub_custom__view_hr_expense_expense_form [data-id="unit_quantity"]       {width: 7%;}
+.lamaisondub_custom__view_hr_expense_expense_form [data-id="total_amount"]   {width: 7%;}

@@ -31,6 +31,7 @@
         'base',
         'account',
         'web_tree_image',
+        'hr_expense',
     ],
     'data': [
         'security/ir_model_access.yml',
