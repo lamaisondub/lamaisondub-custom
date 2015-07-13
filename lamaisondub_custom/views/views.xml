@@ -62,11 +62,23 @@
             <field name="arch" type="xml">
                 <!-- hide accounting fields -->
                 <xpath expr="//label[@for='is_company']" position="attributes">
-                  <attribute name="groups">account.group_account_user</attribute>
+                    <attribute name="groups">base.group_no_one</attribute>
                 </xpath>
                 <field name="is_company" position="attributes">
                     <attribute name="groups">base.group_no_one</attribute>
                 </field>
+                <field name="vat" position="attributes">
+                    <attribute name="groups">base.group_no_one</attribute>
+                </field>
+                <field name="vat_subjected" position="attributes">
+                    <attribute name="groups">base.group_no_one</attribute>
+                </field>
+                <xpath expr="//label[@for='vat']" position="attributes">
+                    <attribute name="groups">base.group_no_one</attribute>
+                </xpath>
+                <xpath expr="//button[@name='button_check_vat']" position="attributes">
+                    <attribute name="groups">base.group_no_one</attribute>
+                </xpath>
                 <field name="parent_id" position="attributes">
                     <attribute name="groups">base.group_no_one</attribute>
                 </field>
@@ -78,6 +90,9 @@
                 </field>
                 <field name="title" position="attributes">
                     <attribute name="groups">base.group_no_one</attribute>
+                </field>
+                <field name="bank_ids" position="attributes">
+                  <attribute name="groups">account.group_account_user</attribute>
                 </field>
 
                 <!-- hide accounting fields -->

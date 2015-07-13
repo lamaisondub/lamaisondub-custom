@@ -32,6 +32,7 @@
         'account',
         'web_tree_image',
         'hr_expense',
+        'base_vat',
     ],
     'data': [
         'security/ir_model_access.yml',
