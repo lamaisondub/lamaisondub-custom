@@ -16,3 +16,11 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ******************************************************************************/
+
+.openerp .maisondub_partner_credit{
+    background-color:#FCC;
+}
+
+.openerp .maisondub_partner_debit{
+    background-color:#CFC;
+}

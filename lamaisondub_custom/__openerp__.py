@@ -26,11 +26,13 @@
     'category': 'Custom',
     'license': 'AGPL-3',
     'author': 'La Maison Dub',
-    'website': 'http://lamaisondub.potager.org  ',
+    'website': 'http://lamaisondub.potager.org',
     'depends': [
         'base',
+        'account',
     ],
     'data': [
         'views/qweb.xml',
+        'views/views.xml',
     ],
 }
