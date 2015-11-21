@@ -20,37 +20,6 @@
 #
 ##############################################################################
 
-- !record {model: ir.model.access, id: account.access_account_move_uinvoice}:
-    perm_read: true
-    perm_create: false
-    perm_write: false
-    perm_unlink: false
-
-- !record {model: ir.model.access, id: account.access_account_move_line_uinvoice}:
-    perm_read: true
-    perm_create: false
-    perm_write: false
-    perm_unlink: false
-
-
-- !record {model: ir.model.access, id: access_account_move_accountant}:
-    group_id: account.group_account_user
-    model_id: account.model_account_move
-    name: MdB Comptable
-    perm_read: true
-    perm_create: true
-    perm_write: true
-    perm_unlink: true
-
-- !record {model: ir.model.access, id: access_account_move_line_accountant}:
-    group_id: account.group_account_user
-    model_id: account.model_account_move_line
-    name: MdB Comptable
-    perm_read: true
-    perm_create: true
-    perm_write: true
-    perm_unlink: true
-
 - !record {model: ir.model.access, id: base.access_ir_attachment_group_user}:
     perm_unlink: false
 

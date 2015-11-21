@@ -4,8 +4,8 @@ La Maison Dub - Custom Module
 This module:
 
 * display credit and debit field on res.partner kanban view;
-* give the possibility to all people to see Journal Items Button in res.partner form view;
-* members of account.group_account_invoice can not create account.move / account.move.line;
+* give the possibility to all people to see Journal Items Button in res.partner
+  form view;
 
 Credits
 =======
